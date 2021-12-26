@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--mainBG: hsl(217, 54%, 11%);
+	--cardBG: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	--radius: 10px;
+}
+
+body {
+	background-color: var(--mainBG);
+	font-family: "Outfit", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: var(--white);
+}
+
+p {
+	font-size: 16px;
+}
+
+.card {
+	background-color: var(--cardBG);
+	/* height: 500px; */
+	width: 300px;
+	border-radius: var(--radius);
+	box-shadow: 2px 2px 10px 2px black;
+	padding: 20px;
+}
+
+.img-equilibrium {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--radius);
+	margin-bottom: 20px;
+}
+
+.title {
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.desc {
+	color: var(--soft-blue);
+	margin: 10px 0;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info p {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+.info p span,
+.info p img {
+	display: block;
+}
+.info p img {
+	margin-right: 5px;
+}
+
+.info p:first-child {
+	color: var(--cyan);
+}
+.info p:last-child {
+	color: var(--soft-blue);
+}
+
+.creator {
+	border-top: 2px solid var(--line);
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	padding: 10px 0 0;
+}
+.creator p {
+	font-size: 16px;
+}
+.creator span {
+	color: var(--soft-blue);
+}
+
+.avatar {
+	display: block;
+	width: 30px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	margin-right: 15px;
+}
